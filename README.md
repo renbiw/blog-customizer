@@ -1,4 +1,4 @@
-# ссылка на проект 
+# ссылка напроект 
 https://github.com/renbiw/blog-customizer.git
 
 # Проектная работа: Вёрстка проекта 
