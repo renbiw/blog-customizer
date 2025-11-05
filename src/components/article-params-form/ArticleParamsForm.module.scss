@@ -1,3 +1,10 @@
+.title {
+	font-size: 31px;
+	text-transform: uppercase;
+	font-weight: 800;
+	font-family: 'Open Sans', sans-serif;
+}
+
 .container {
 	position: fixed;
 	left: 0;
@@ -29,4 +36,16 @@
 	display: flex;
 	justify-content: space-between;
 	margin-top: auto;
+}
+
+.contentContainer {
+	display: flex;
+	gap: 50px;
+	flex-direction: column;
+}
+
+.middleContainer {
+	display: flex;
+	border: 1px solid #000;
+	max-width: 372px;
 }
