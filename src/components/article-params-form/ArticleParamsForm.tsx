@@ -13,6 +13,7 @@ import {
 	OptionType,
 } from 'src/constants/articleProps';
 import { useOverlayClick } from '../use-overlay-click/useOverlayClick';
+import clsx from 'clsx';
 
 import styles from './ArticleParamsForm.module.scss';
 
@@ -83,9 +84,7 @@ export const ArticleParamsForm = ({
 			<ArrowButton isOpen={isOpen} onClick={toggle} />
 			<aside
 				ref={overlayRef}
-				className={`${styles.container} ${
-					isOpen ? styles.container_open : styles.container
-				}`}>
+				className={clsx(styles.container, { [styles.container_open]: isOpen })}>
 				<form className={styles.form} onSubmit={applyEdit} onReset={resetEdit}>
 					<div className={styles.contentContainer}>
 						<p className={styles.title}>Задайте параметры</p>
